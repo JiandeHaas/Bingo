@@ -5,8 +5,66 @@
   <title>Bingo</title>
   <link rel='icon' href='https://secureservercdn.net/50.62.172.232/3pq.89b.myftpupload.com/wp-content/uploads/2017/01/bingo-ball-favicon-400x400.png' type='image/x-icon'>
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
 </head>
 <body>
+  <div>
+        <div id="app-cover">
+          <div id="bg-artwork"></div>
+          <div id="bg-layer"></div>
+          <div id="player">
+              <div id="player-track">
+                  <div id="album-name"></div>
+                  <div id="track-name"></div>
+                  <div id="track-time">
+                      <div id="current-time"></div>
+                      <div id="track-length"></div>
+                  </div>
+                  <div id="s-area">
+                      <div id="ins-time"></div>
+                      <div id="s-hover"></div>
+                      <div id="seek-bar"></div>
+                  </div>
+              </div>
+              <div id="volume-track">
+                <input class="volume-slider" type="range" min="0" max="100">
+              </div>
+              <div id="player-content">
+                  <div id="album-art">
+                      <img src="music/thumbnails/1.png" class="active" id="_1">
+                      <img src="music/thumbnails/2.png" id="_2">
+                      <!-- <img src="https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_3.jpg" id="_3">
+                      <img src="https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_4.jpg" id="_4">
+                      <img src="https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_5.jpg" id="_5"> -->
+                      <div id="buffer-box">Buffering ...</div>
+                  </div>
+                  <div id="player-controls">                      
+                    <div class="control">
+                        <div class="button" id="play-previous">
+                            <i class="fas fa-backward"></i>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <div class="button" id="play-pause-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <div class="button" id="play-next">
+                            <i class="fas fa-forward"></i>
+                        </div>
+                    </div>
+                    <div class="control">
+                      <div class="button" id="volume-button">
+                        <i class="fas fa-volume-up"></i>
+                      </div>
+                  </div>
+                </div>                    
+              </div>
+          </div>
+      </div>
+      </div>                         
+    </div>
   <ul class="pages">
     <li class="chat page">
       <div class="chatArea">
@@ -24,7 +82,6 @@
       </div>
     </li>
   </ul>
-
   <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
   <script src="/socket.io/socket.io.js"></script>
   <script src="/js/main.js"></script>
