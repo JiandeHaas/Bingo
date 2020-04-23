@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bingo</title>
+  <link rel='icon' href='https://secureservercdn.net/50.62.172.232/3pq.89b.myftpupload.com/wp-content/uploads/2017/01/bingo-ball-favicon-400x400.png' type='image/x-icon'>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <ul class="pages">
+    <li class="chat page">
+      <div class="chatArea">
+        <ul class="messages"></ul>
+      </div>
+      <input class="inputMessage" placeholder="Typ hier..."/>
+    </li>
+    <li class="login page">
+      <div class="bingoLogo">
+        <img src="https://www.kbosheerenhoek.nl/afbeeldingen/Bingo%2018.png">
+      </div>
+      <div class="form">
+        <h3 class="title">Wat is je naam?</h3>
+        <input class="usernameInput" type="text" maxlength="14" />
+      </div>
+    </li>
+  </ul>
+
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>
